@@ -69,7 +69,8 @@
                     <ul class="list-inline intro-social-buttons">
 
                         <li>
-                            <a href="#bottom" class="btn btn-default btn-lg btn-intro">
+                            <a href="#bottom" onclick="setTimeout(function(){$('#mce-EMAIL').focus()})"
+                               class="btn btn-default btn-lg btn-intro">
                                 <span class="network-name">M'avertir de la sortie</span></a>
                         </li>
                     </ul>
@@ -87,7 +88,7 @@
 
 <a name="services"></a>
 
-<div class="content-section-a">
+<div class="content-section-b">
 
     <div class="container">
         <div class="row list-step" style="display: flex;">
@@ -98,9 +99,9 @@
 
                 <h2 class="section-heading">1 - Choisissez une palette</h2>
 
-                <p class="lead">Article, manuel, livre, présentation, plus qu'un type de document,
-                    la palette c'est l'ensemble des <b>éléments sémantiques</b> (mot important, citation, bloc de
-                    code...).</p>
+                <p class="lead">Article, manuel, roman, présentation, plus qu'un type de document,
+                    la palette c'est un ensemble des <b>éléments sémantiques</b> (mot important, citation, exemple...).
+                </p>
             </div>
 
 
@@ -124,15 +125,121 @@
                 <img src="./img/computer%20screen16.png"/>
                 <h2 class="section-heading">3 - Exportez</h2>
 
-                <p class="lead">﻿﻿﻿﻿﻿﻿Choisissez une mise en forme, un support (site web, pdf)
-                    et partagez votre travail comme bon vous semble.</p>
+                <p class="lead">﻿﻿﻿﻿﻿﻿Choisissez une mise en forme, un support (site web, pdf, ebook)
+                    et partagez votre travail</p>
             </div>
 
         </div>
+    </div>
+    <div class="row" style="display: flex;margin-top:35px;align-items: center;justify-content: center;">
+        <ul class="list-inline intro-social-buttons">
 
-
+            <li>
+                <a href="#bottom"
+                   onclick="setTimeout(function(){$('#mce-EMAIL').focus()})"
+                   class="btn btn-default btn-lg btn-intro"
+                   style="background-color: #080808; color: white;">
+                    <span class="network-name">M'avertir de la sortie</span></a>
+            </li>
+        </ul>
     </div>
     <!-- /.container -->
+
+</div>
+
+<div class="content-section-a">
+    <div class="container">
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingOne">
+                    <h4 class="panel-title">
+                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
+                           aria-expanded="" aria-controls="collapseOne">
+                            Une chaine édito.. quoi ?
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                    <div class="panel-body lead">
+                        Une <a href="https://fr.wikipedia.org/wiki/Cha%C3%AEne_%C3%A9ditoriale" target="_blank">chaine
+                        éditoriale</a> est un outil capable de <b>transformer le travail d'un auteur en un
+                        document publiable.</b><br/>
+                        Pour cela, une séparation est faite entre le fond (le contenu et sa structure) et la forme (le
+                        format et la mise en page).
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingTwo">
+                    <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                           href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Qu'est ce que ça change ?
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                    <div class="panel-body lead">
+                        <ul>
+                            <li>L'auteur se concentre uniquement sur le <b>contenu</b> et sa structure</li>
+                            <li>L'auteur dispose d'un outil et un support entièrement dédié à sa tâche</li>
+                            <li>L'auteur n'a <b>plus de mise en page</b> à faire</li>
+                            <li>L'auteur rédige pour de <b>multiples supports en une seule fois</b>
+                                (site web, pdf, ebook, imprimé, diaporama)
+                            </li>
+                            <li>Les <b>mises à jour tartive</b> du fond ou de la forme ne sont plus des problèmes</li>
+                            <li>Il est possible de <b>réutiliser une mise en page</b> (faite une fois pour toute)</li>
+                            <li>Le document produit <b>respecte scrupuleusement la charte graphique</b> choisie
+                                (entreprise, maison d'édition...)
+                            </li>
+                            <li>Il est possible de <b>changer la charte graphique</b> de centaines de documents
+                                automatiquement
+                            </li>
+                            <li>Tous les documents produits sont <b>uniformes</b></li>
+                            <li>Le support de travail est <b>normalisé</b>, ce qui facilite la collaboration
+                                (gras c'est "important", mais... souligné ? et surligné jaune ?)
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingThree">
+                    <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                           href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Qui est concerné ?
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                    <div class="panel-body lead">
+                        <ul>
+                            <li>Si vous souhaitez réutiliser une mise en page</li>
+                            <li>Si vous avez besoin de réutiliser votre contenu</li>
+                            <li>Si la mise en page n'a aucun enjeu (prise de note, doc interne...) vous gagnez à vous
+                                affranchir
+                                de la mise en
+                                page : c'est une perte de temps
+                            </li>
+                            <li>Si vous devez respecter une mise en page et une charte graphique imposées par d'autres
+                                (maisons
+                                d'édition, CMS,
+                                charte entreprise), profitez de l'application automatique de ces contraintes !
+                            </li>
+                            <li>Si votre marketing change de charte tous les mois et que vous maintenez des dizaines
+                                de
+                                documents
+                                (ou plus)
+                            </li>
+                            <li>Si vous souhaitez normaliser le travail multi-auteurs</li>
+                        </ul>
+                        <h4> ... alors Redige.net est fait pour vous !</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </div>
 <!-- /.content-section-a -->
