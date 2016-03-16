@@ -1,0 +1,13 @@
+{
+  "name": "redige-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server/server.js"
+  },
+  "author": "mmouterde",
+  "dependencies": {
+    "restify": "4.0.4"
+  }
+}
