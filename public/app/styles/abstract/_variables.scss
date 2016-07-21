@@ -7,10 +7,27 @@ $rdg-yellow: #ffcd00;
 // !! Overriding Bulma variables
 // Colors
 
+$black: #111 !default;
+$grey-darker: #222324 !default;
+$grey-dark: #69707a !default;
+$grey: #aeb1b5 !default;
+$grey-light: #d3d6db !default;
+$grey-lighter: #f5f7fa !default;
+$white: #fff !default;
+
 $blue: $rdg-dark-blue;
+$green: #97cd76 !default;
 $orange: $rdg-orange;
+$purple: #847bb9 !default;
+$red: #ed6c63 !default;
 $turquoise: $rdg-light-blue;
 $yellow: $rdg-yellow;
 
+
 $primary: $blue;
 $info: $turquoise;
+
+$family-sans-serif: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+
+$radius: 0;
+$control-active-border: darken($grey, 15%);

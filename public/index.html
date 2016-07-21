@@ -4,11 +4,14 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Rédige, la mise en forme viendra">
+    <meta name="author" content="Martin Mouterde, Corentin Cocoual">
 
     <title>Rédige</title>
     <link rel="icon" href="favicon.ico">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
     <!-- build:css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/mdi/css/materialdesignicons.css" />
@@ -43,7 +46,7 @@
 <nav class="nav has-shadow rdg-nav">
     <div class="nav-left">
         <a class="nav-item" href="/">
-            <img src="app/assets/img/redige-icon.png" alt="Logo">
+            <img src="app/assets/img/redige-icon/redige-icon-128.png" alt="Logo">
         </a>
     </div>
     <span class="nav-toggle">
@@ -79,7 +82,7 @@
 <!-- end-replace -->
 
 <!-- replace:main -->
-<section id="main" class="hero is-primary is-medium">
+<section id="main" class="hero is-primary is-bold is-medium">
     <div class="hero-body">
         <div class="container">
             <div class="columns">
@@ -91,7 +94,7 @@
                         La chaine éditoriale pour les documents
                     </h2>
                     <p>
-                        <a class="rdg-button rdg-big" href="http://demo.redige.net/">
+                        <a class="button is-large is-info" href="http://demo.redige.net/">
                             Venez l'essayer
                         </a>
                     </p>
@@ -140,35 +143,41 @@
 <!-- end-replace -->
 
 <!-- replace:contact -->
-<section id="contact" class="section is-large">
-    <div class="container">
-        <div class="heading">
-            <h2 class="title">Contact</h2>
-            <h3 class="subtitle">Inscrivez vous pour être prévenu de la sortie.</h3>
-        </div>
-        <div class="content">
-            <form>
-                <div class="control">
-                    <div class="control-label">
-                        <label class="label">Nom Prénom</label>
-                    </div>
-                    <div class="control is-grouped">
-                        <p class="control is-expanded">
-                            <input class="rdg-input" type="text" placeholder="Nom">
-                        </p>
-                        <p class="control is-expanded">
-                            <input class="rdg-input" type="text" placeholder="Prénom">
-                        </p>
+<section id="contact" class="hero is-info is-bold is-large ">
+    <div class="hero-body">
+        <div class="container">
+            <div class="heading has-text-centered">
+                <h2 class="title">Nous contacter</h2>
+                <h3 class="subtitle">Inscrivez vous pour être prévenu de la sortie.</h3>
+            </div>
+            <div class="content rdg-big-topbottom-margin">
+                <div class="columns">
+                    <div class="column is-half is-offset-one-quarter">
+                        <div class="control is-horizontal">
+                            <div class="control is-grouped">
+                                <p class="control is-expanded">
+                                    <input type="text" class="input" placeholder="Nom">
+
+                                </p>
+                                <p class="control is-expanded">
+                                    <input type="text" class="input" placeholder="Prénom">
+                                </p>
+                            </div>
+                        </div>
+                        <div class="control is-horizontal">
+                            <p class="control">
+                                <input class="input" type="email" placeholder="Adresse mail">
+                            </p>
+                        </div>
+                        <div class="control is-horizontal">
+                            <div class="control">
+                                <textarea class="textarea" rows="10" placeholder="Votre message"></textarea>
+                            </div>
+                        </div>
+                        <button class="button is-success is-medium is-pulled-right">S'inscrire</button>
                     </div>
                 </div>
-                <label class="label">Adresse mail</label>
-                <p class="control">
-                    <input class="input" type="email">
-                </p>
-                <p class="control">
-                    <button class="button is-primary">S'inscrire</button>
-                </p>
-            </form>
+            </div>
         </div>
     </div>
 </section>
@@ -179,9 +188,7 @@
     <div class="container">
         <div class="content has-text-centered">
             <p>
-                <strong>Bulma</strong> by <a href="http://jgthms.com">Jeremy Thomas</a>. The source code is licensed
-                <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
-                is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC ANS 4.0</a>.
+                <strong>Rédige</strong> made with <i class="mdi mdi-heart"></i> by Martin Mouterde.
             </p>
         </div>
     </div>

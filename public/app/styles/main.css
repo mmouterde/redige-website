@@ -162,7 +162,7 @@ button,
 input,
 select,
 textarea {
-  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
+  font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
 
 code,
 pre {
@@ -497,7 +497,7 @@ a.box:active {
   align-items: center;
   background-color: white;
   border: 1px solid #d3d6db;
-  border-radius: 3px;
+  border-radius: 0;
   color: #222324;
   display: inline-flex;
   font-size: 14px;
@@ -516,7 +516,7 @@ a.box:active {
   .button:hover {
     border-color: #aeb1b5; }
   .button:active, .button:focus, .button.is-active {
-    border-color: #152133;
+    border-color: #868b90;
     outline: none; }
   .button[disabled], .button.is-disabled {
     background-color: #f5f7fa;
@@ -889,7 +889,7 @@ a.box:active {
   align-items: center;
   background-color: white;
   border: 1px solid #d3d6db;
-  border-radius: 3px;
+  border-radius: 0;
   color: #222324;
   display: inline-flex;
   font-size: 14px;
@@ -906,7 +906,7 @@ a.box:active {
   .input:hover, .textarea:hover {
     border-color: #aeb1b5; }
   .input:active, .textarea:active, .input:focus, .textarea:focus, .input.is-active, .is-active.textarea {
-    border-color: #152133;
+    border-color: #868b90;
     outline: none; }
   .input[disabled], [disabled].textarea, .input.is-disabled, .is-disabled.textarea {
     background-color: #f5f7fa;
@@ -1007,7 +1007,7 @@ a.box:active {
     align-items: center;
     background-color: white;
     border: 1px solid #d3d6db;
-    border-radius: 3px;
+    border-radius: 0;
     color: #222324;
     display: inline-flex;
     font-size: 14px;
@@ -1025,7 +1025,7 @@ a.box:active {
     .select select:hover {
       border-color: #aeb1b5; }
     .select select:active, .select select:focus, .select select.is-active {
-      border-color: #152133;
+      border-color: #868b90;
       outline: none; }
     .select select[disabled], .select select.is-disabled {
       background-color: #f5f7fa;
@@ -1183,22 +1183,22 @@ a.box:active {
       .control.has-addons .input:first-child,
       .control.has-addons .textarea:first-child,
       .control.has-addons .select:first-child {
-        border-radius: 3px 0 0 3px; }
+        border-radius: 0 0 0 0; }
         .control.has-addons .button:first-child select,
         .control.has-addons .input:first-child select,
         .control.has-addons .textarea:first-child select,
         .control.has-addons .select:first-child select {
-          border-radius: 3px 0 0 3px; }
+          border-radius: 0 0 0 0; }
       .control.has-addons .button:last-child,
       .control.has-addons .input:last-child,
       .control.has-addons .textarea:last-child,
       .control.has-addons .select:last-child {
-        border-radius: 0 3px 3px 0; }
+        border-radius: 0 0 0 0; }
         .control.has-addons .button:last-child select,
         .control.has-addons .input:last-child select,
         .control.has-addons .textarea:last-child select,
         .control.has-addons .select:last-child select {
-          border-radius: 0 3px 3px 0; }
+          border-radius: 0 0 0 0; }
       .control.has-addons .button.is-expanded,
       .control.has-addons .input.is-expanded,
       .control.has-addons .is-expanded.textarea,
@@ -1341,7 +1341,7 @@ a.box:active {
 
 .notification {
   background-color: #f5f7fa;
-  border-radius: 3px;
+  border-radius: 0;
   padding: 16px 20px;
   position: relative; }
   .notification:after {
@@ -1349,7 +1349,7 @@ a.box:active {
     content: " ";
     display: table; }
   .notification .delete, .notification .modal-close {
-    border-radius: 0 3px;
+    border-radius: 0 0;
     float: right;
     margin: -16px -20px 0 20px; }
   .notification .subtitle,
@@ -1606,7 +1606,7 @@ a.box:active {
   font-size: 18px;
   line-height: 1.125; }
   .subtitle code {
-    border-radius: 3px;
+    border-radius: 0;
     display: inline-block;
     font-size: 14px;
     padding: 2px 3px;
@@ -1762,7 +1762,8 @@ a.box:active {
   font-size: 11px;
   letter-spacing: 1px;
   margin-bottom: 5px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  }
 
 .highlight {
   font-size: 12px;
@@ -2640,7 +2641,7 @@ a.box:active {
   align-items: center;
   justify-content: space-between; }
   .level code {
-    border-radius: 3px; }
+    border-radius: 0; }
   .level img {
     display: inline-block;
     vertical-align: top; }
@@ -2743,25 +2744,25 @@ a.box:active {
 
 .message-body {
   border: 1px solid #d3d6db;
-  border-radius: 3px;
+  border-radius: 0;
   padding: 12px 15px; }
   .message-body strong {
     color: inherit; }
 
 .message-header {
   background-color: #69707a;
-  border-radius: 3px 3px 0 0;
+  border-radius: 0 0 0 0;
   color: white;
   padding: 7px 10px; }
   .message-header strong {
     color: inherit; }
   .message-header + .message-body {
-    border-radius: 0 0 3px 3px;
+    border-radius: 0 0 0 0;
     border-top: none; }
 
 .message {
   background-color: #f5f7fa;
-  border-radius: 3px; }
+  border-radius: 0; }
   .message.is-white {
     background-color: white; }
     .message.is-white .message-header {
@@ -3170,7 +3171,7 @@ a.panel-block:hover {
     justify-content: flex-end; }
   .tabs.is-boxed a {
     border: 1px solid transparent;
-    border-radius: 3px 3px 0 0;
+    border-radius: 0 0 0 0;
     padding-bottom: 5px;
     padding-top: 5px; }
     .tabs.is-boxed a:hover {
@@ -3195,9 +3196,9 @@ a.panel-block:hover {
   .tabs.is-toggle li + li {
     margin-left: -1px; }
   .tabs.is-toggle li:first-child a {
-    border-radius: 3px 0 0 3px; }
+    border-radius: 0 0 0 0; }
   .tabs.is-toggle li:last-child a {
-    border-radius: 0 3px 3px 0; }
+    border-radius: 0 0 0 0; }
   .tabs.is-toggle li.is-active a {
     background-color: #152133;
     border-color: #152133;
@@ -3797,11 +3798,77 @@ a.panel-block:hover {
   padding: 10px;
   font-size: larger; }
 
+.rdg-input-button {
+  margin: 15px;
+  padding: 5px;
+  font-size: larger; }
+
 .rdg-image-presentation {
   width: 100%; }
+
+.rdg-input {
+  padding: 5px;
+  border: 1px solid #d3d6db; }
 
 .rdg-nav {
   position: fixed;
   width: 100%; }
+
+.rdg-little-margin {
+  margin: 5px; }
+
+.rdg-small-margin {
+  margin: 10px; }
+
+.rdg-medium-margin {
+  margin: 20px; }
+
+.rdg-large-margin {
+  margin: 30px; }
+
+.rdg-big-margin {
+  margin: 40px; }
+
+/* Side margins */
+.rdg-little-side-margin {
+  margin-left: 5px;
+  margin-right: 5px; }
+
+.rdg-small-side-margin {
+  margin-left: 10px;
+  margin-right: 10px; }
+
+.rdg-medium-side-margin {
+  margin-left: 20px;
+  margin-right: 20px; }
+
+.rdg-large-side-margin {
+  margin-left: 30px;
+  margin-right: 30px; }
+
+.rdg-big-side-margin {
+  margin-left: 40px;
+  margin-right: 40px; }
+
+/* TopBottom margin */
+.rdg-little-topbottom-margin {
+  margin-top: 5px;
+  margin-bottom: 5px; }
+
+.rdg-small-topbottom-margin {
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+.rdg-medium-topbottom-margin {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+.rdg-large-topbottom-margin {
+  margin-top: 30px;
+  margin-bottom: 30px; }
+
+.rdg-big-topbottom-margin {
+  margin-top: 40px;
+  margin-bottom: 40px; }
 
 /*# sourceMappingURL=main.css.map */
