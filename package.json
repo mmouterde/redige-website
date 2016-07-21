@@ -9,5 +9,21 @@
   "author": "mmouterde",
   "dependencies": {
     "restify": "4.0.4"
+  },
+  "devDependencies": {
+    "autoprefixer": "6.3.6",
+    "blanket": "1.2.1",
+    "grunt": "0.4.5",
+    "grunt-contrib-connect": "0.11.2",
+    "grunt-contrib-copy": "0.8.0",
+    "grunt-contrib-cssmin": "0.13.0",
+    "grunt-contrib-sass": "0.9.2",
+    "grunt-contrib-watch": "1.0.0",
+    "grunt-file-blocks": "0.4.0",
+    "grunt-replace": "0.9.3",
+    "grunt-wiredep": "2.0.0",
+    "jit-grunt": "0.9.1",
+    "load-grunt-tasks": "3.1.0",
+    "time-grunt": "1.0.0"
   }
 }

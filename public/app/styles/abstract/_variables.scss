@@ -1,0 +1,16 @@
+//Rédige colors
+
+$rdg-dark-blue: #152133;
+$rdg-light-blue: #2168ff;
+$rdg-orange: #ff6700;
+$rdg-yellow: #ffcd00;
+// !! Overriding Bulma variables
+// Colors
+
+$blue: $rdg-dark-blue;
+$orange: $rdg-orange;
+$turquoise: $rdg-light-blue;
+$yellow: $rdg-yellow;
+
+$primary: $blue;
+$info: $turquoise;

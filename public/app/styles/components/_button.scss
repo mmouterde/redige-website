@@ -1,0 +1,22 @@
+.rdg-button {
+  transition: all 0.3s ease 0s;
+  border: none;
+  background-color: $rdg-light-blue;
+  color: white;
+
+  &:hover {
+    color: white;
+    text-underline: none;
+    background-color: darken($rdg-light-blue, 10%);
+  }
+
+  &:active {
+    background-color: darken($rdg-light-blue, 15%);
+  }
+}
+
+.rdg-big {
+  margin: 15px;
+  padding: 10px;
+  font-size: larger;
+}

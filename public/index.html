@@ -1,36 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Redige</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="css/landing-page.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet"
-          type="text/css">
-
-    <link href="http://fonts.googleapis.com/css?family=Raleway:400,300,200,700" rel="stylesheet"
-          type="text/css">
-
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <title>Rédige</title>
+    <link rel="icon" href="favicon.ico">
+    <!-- build:css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/mdi/css/materialdesignicons.css" />
+    <link rel="stylesheet" href="bower_components/mdi/css/materialdesignicons.min.css" />
+    <!-- endbower -->
+    <!-- fileblock:css style -->
+    <link href="app/styles/main.css" rel="stylesheet" />
+    <!-- endfileblock -->
+    <!-- endbuild -->
 
     <script>
         (function (i, s, o, g, r, a, m) {
@@ -50,280 +37,156 @@
 
     </script>
 </head>
-
 <body>
 
-<!-- Header -->
-<a name="about"></a>
+<!-- replace:navbar -->
+<nav class="nav has-shadow rdg-nav">
+    <div class="nav-left">
+        <a class="nav-item" href="/">
+            <img src="app/assets/img/redige-icon.png" alt="Logo">
+        </a>
+    </div>
+    <span class="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </span>
+    <div class="nav-right nav-menu">
+        <a href="#main" class="nav-item is-active">
+            Accueil
+        </a>
+        <a href="#targets" class="nav-item">
+            Pour qui ?
+        </a>
+        <a href="#features" class="nav-item">
+            Fonctionnalités
+        </a>
+        <a href="#pricing" class="nav-item">
+            Tarifs
+        </a>
+        <a href="#contact" class="nav-item">
+            Nous contacter
+        </a>
+        <span class="nav-item">
+            <a href="https://twitter.com/RedigeNet" class="button is-info is-inverted">
+                <span class="icon">
+                    <i class="mdi mdi-twitter"></i>
+                </span>
+            </a>
+        </span>
+    </div>
+</nav>
+<!-- end-replace -->
 
-<div class="intro-header">
-    <div class="container">
-
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="intro-message">
-                    <h1>Rédige</h1>
-
-                    <h3>La chaine éditoriale pour les documents</h3>
-                    <hr class="intro-divider">
-                    <ul class="list-inline intro-social-buttons">
-
-                        <li>
-                            <a href="#bottom" onclick="setTimeout(function(){$('#mce-EMAIL').focus()})"
-                               class="btn btn-default btn-lg btn-intro">
-                                <span class="network-name">M'avertir de la sortie</span></a>
-                        </li>
-                    </ul>
+<!-- replace:main -->
+<section id="main" class="hero is-primary is-medium">
+    <div class="hero-body">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-two-thirds has-text-centered">
+                    <h1 class="title">
+                        <img src="app/assets/img/redige-logo-white.png" alt="Rédige Logo">
+                    </h1>
+                    <h2 class="subtitle">
+                        La chaine éditoriale pour les documents
+                    </h2>
+                    <p>
+                        <a class="rdg-button rdg-big" href="http://demo.redige.net/">
+                            Venez l'essayer
+                        </a>
+                    </p>
+                </div>
+                <div class="column has-text-centered">
+                    <img class="rdg-image-presentation" src="app/assets/img/demo.gif" alt="Démo">
                 </div>
             </div>
         </div>
-
     </div>
-    <!-- /.container -->
+</section>
+<!-- end-replace -->
 
-</div>
-<!-- /.intro-header -->
 
-<!-- Page Content -->
-
-<a name="services"></a>
-
-<div class="content-section-b">
-
+<!-- replace:targets -->
+<section id="targets" class="section is-large">
     <div class="container">
-        <div class="row list-step" style="display: flex;">
+        <div class="heading">
+            <h2 class="title">Pour qui ?</h2>
+        </div>
+        <div class="content">
 
-            <div class="col-lg-4 col-sm-8"
-                 style="display: flex;flex-direction: column;align-items: center;justify-content: center;">
-                <img src="./img/painter14.png"/>
+        </div>
+    </div>
+</section>
+<!-- end-replace -->
 
-                <h2 class="section-heading">1 - Choisissez une palette</h2>
+<!-- replace:features -->
+<section id="features" class="section is-large">
+    <div class="container">
+        <div class="heading">
+            <h1 class="title">Features</h1>
+        </div>
+    </div>
+</section>
+<!-- end-replace -->
 
-                <p class="lead">Article, manuel, roman, présentation, plus qu'un type de document,
-                    la palette c'est un ensemble des <b>éléments sémantiques</b> (mot important, citation, exemple...).
+<!-- replace:pricing -->
+<section id="pricing" class="section is-large">
+    <div class="container">
+        <div class="heading">
+            <h1 class="title">Pricing</h1>
+        </div>
+    </div>
+</section>
+<!-- end-replace -->
+
+<!-- replace:contact -->
+<section id="contact" class="section is-large">
+    <div class="container">
+        <div class="heading">
+            <h2 class="title">Contact</h2>
+            <h3 class="subtitle">Inscrivez vous pour être prévenu de la sortie.</h3>
+        </div>
+        <div class="content">
+            <form>
+                <div class="control">
+                    <div class="control-label">
+                        <label class="label">Nom Prénom</label>
+                    </div>
+                    <div class="control is-grouped">
+                        <p class="control is-expanded">
+                            <input class="rdg-input" type="text" placeholder="Nom">
+                        </p>
+                        <p class="control is-expanded">
+                            <input class="rdg-input" type="text" placeholder="Prénom">
+                        </p>
+                    </div>
+                </div>
+                <label class="label">Adresse mail</label>
+                <p class="control">
+                    <input class="input" type="email">
                 </p>
-            </div>
-
-
-            <div class="col-lg-4 col-sm-8"
-                 style="display: flex;flex-direction: column;align-items: center;justify-content: center;">
-
-                <img src="./img/gauge.png"/>
-                <h2 class="section-heading">2 - Rédigez !</h2>
-
-                <p class="lead"> Gardez le focus sur le contenu et sa structure sans vous soucier de la mise en page.
-                    Ecrivez <b>sans coder</b> en profitant d'un véritable support de travail résistant aux aléas de
-                    l'élaboration.</p>
-
-
-            </div>
-
-
-            <div class="col-lg-4 col-sm-8"
-                 style="display: flex;flex-direction: column;align-items: center;justify-content: center;">
-
-                <img src="./img/computer%20screen16.png"/>
-                <h2 class="section-heading">3 - Exportez</h2>
-
-                <p class="lead">﻿﻿﻿﻿﻿﻿Choisissez une mise en forme, un support (site web, pdf, ebook)
-                    et partagez votre travail</p>
-            </div>
-
+                <p class="control">
+                    <button class="button is-primary">S'inscrire</button>
+                </p>
+            </form>
         </div>
     </div>
-    <div class="row" style="display: flex;margin-top:35px;align-items: center;justify-content: center;">
-        <ul class="list-inline intro-social-buttons">
+</section>
+<!-- end-replace -->
 
-            <li>
-                <a href="#bottom"
-                   onclick="setTimeout(function(){$('#mce-EMAIL').focus()})"
-                   class="btn btn-default btn-lg btn-intro"
-                   style="background-color: #080808; color: white;">
-                    <span class="network-name">M'avertir de la sortie</span></a>
-            </li>
-        </ul>
-    </div>
-    <!-- /.container -->
-
-</div>
-
-<div class="content-section-a">
+<!-- replace:footer -->
+<footer class="footer">
     <div class="container">
-        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-            <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingOne">
-                    <h4 class="panel-title">
-                        <a role="button" style="font-size:18px" data-toggle="collapse" data-parent="#accordion"
-                           href="#collapseOne"
-                           aria-expanded="" aria-controls="collapseOne">
-                            Une chaine édito.. quoi ?
-                        </a>
-                    </h4>
-                </div>
-                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                    <div class="panel-body lead">
-                        Une <a href="https://fr.wikipedia.org/wiki/Cha%C3%AEne_%C3%A9ditoriale" target="_blank">chaine
-                        éditoriale</a> est un outil capable de <b>transformer le travail d'un auteur en un
-                        document publiable.</b><br/>
-                        Pour cela, une séparation est faite entre le fond (le contenu et sa structure) et la forme (le
-                        format et la mise en page).
-                    </div>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingTwo">
-                    <h4 class="panel-title">
-                        <a class="collapsed" style="font-size:18px" role="button" data-toggle="collapse"
-                           data-parent="#accordion"
-                           href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Qu'est ce que ça change ?
-                        </a>
-                    </h4>
-                </div>
-                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                    <div class="panel-body lead">
-                        <ul>
-                            <li>L'auteur se concentre contenu et sa structure</li>
-                            <li>Plus besoin de faire de mise en page</li>
-                            <li>Un seul écrit pour de multiples supports (site web, pdf, ebook, imprimé,
-                                diaporama)
-                            </li>
-                            <li>Le support de travail est normalisé, ce qui facilite la collaboration
-                                (gras c'est "important", mais... souligné ? et surligné jaune ?)
-                            </li>
-                        </ul>
-                        <h4> ... et ça, ça change tout !</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingThree">
-                    <h4 class="panel-title">
-                        <a class="collapsed" style="font-size:18px" role="button" data-toggle="collapse"
-                           data-parent="#accordion"
-                           href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            Qui est concerné ?
-                        </a>
-                    </h4>
-                </div>
-                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                    <div class="panel-body lead">
-                        <ul>
-                            <li>Si vous souhaitez réutiliser une mise en page, un contenu</li>
-                            <li>Si la mise en page n'est pas de votre valeur ajoutée</li>
-                            <li>Si vous devez respecter une charte graphique imposée</li>
-                            <li>Si vous souhaitez normaliser le travail multi-auteurs</li>
-                        </ul>
-                        <h4> ... alors Redige.net est fait pour vous !</h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-</div>
-<!-- /.content-section-a -->
-
-<a name="bottom"></a>
-
-<div class="content-section-b">
-
-    <div class="container">
-
-        <div class="row">
-            <div class="col-lg-5">
-                <!-- Begin MailChimp Signup Form -->
-                <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
-                <style type="text/css">
-                    #mc_embed_signup {
-                        background: #fff;
-                        clear: left;
-                        font: 14px Helvetica, Arial, sans-serif;
-                    }
-
-                    /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-                       We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-                </style>
-                <div id="mc_embed_signup">
-                    <form action="//redige.us12.list-manage.com/subscribe/post?u=9ef0ae1cc3a50d581be0a4df1&amp;id=b8826273f3"
-                          method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
-                          class="validate" target="_blank" novalidate>
-                        <div id="mc_embed_signup_scroll">
-                            <h2>Inscrivez vous pour être prévenu de la sortie.</h2>
-
-                            <div class="indicates-required"><span class="asterisk">*</span> champ requis</div>
-                            <div class="mc-field-group">
-                                <label for="mce-EMAIL">Email <span class="asterisk">*</span>
-                                </label>
-                                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-                            </div>
-                            <div class="mc-field-group">
-                                <label for="mce-FNAME">Prénom </label>
-                                <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
-                            </div>
-                            <div class="mc-field-group">
-                                <label for="mce-LNAME">Nom </label>
-                                <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
-                            </div>
-                            <div id="mce-responses" class="clear">
-                                <div class="response" id="mce-error-response" style="display:none"></div>
-                                <div class="response" id="mce-success-response" style="display:none"></div>
-                            </div>
-                            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                            <div style="position: absolute; left: -5000px;"><input type="text"
-                                                                                   name="b_9ef0ae1cc3a50d581be0a4df1_b8826273f3"
-                                                                                   tabindex="-1" value=""></div>
-                            <div class="clear"><input type="submit" value="Subscribe" name="subscribe"
-                                                      id="mc-embedded-subscribe" class="button"></div>
-                        </div>
-                    </form>
-                </div>
-                <script type='text/javascript'
-                        src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
-                <script type='text/javascript'>(function ($) {
-                    window.fnames = new Array();
-                    window.ftypes = new Array();
-                    fnames[0] = 'EMAIL';
-                    ftypes[0] = 'email';
-                    fnames[1] = 'FNAME';
-                    ftypes[1] = 'text';
-                    fnames[2] = 'LNAME';
-                    ftypes[2] = 'text';
-                }(jQuery));
-                var $mcj = jQuery.noConflict(true);</script>
-                <!--End mc_embed_signup-->
-            </div>
-        </div>
-
-    </div>
-    <!-- /.container -->
-
-</div>
-
-<div class="scrollOverFlow"></div>
-
-<!-- Footer -->
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <p class="copyright text-muted small">Copyright &copy; 2015. www.redige.net - All Rights Reserved - Icon
-                    made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a
-                            href="http://www.flaticon.com"
-                            title="Flaticon">www.flaticon.com</a>
-                    & <a href="http://www.google.com" title="Google">Google</a> is licensed under <a
-                            href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY
-                        3.0</a></p>
-            </div>
+        <div class="content has-text-centered">
+            <p>
+                <strong>Bulma</strong> by <a href="http://jgthms.com">Jeremy Thomas</a>. The source code is licensed
+                <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+                is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC ANS 4.0</a>.
+            </p>
         </div>
     </div>
 </footer>
-<!-- jQuery -->
-<script src="js/jquery.js"></script>
+<!-- end-replace -->
 
-<!-- Bootstrap Core JavaScript -->
-<script src="js/bootstrap.min.js"></script>
-<div></div>
 </body>
-
 </html>
