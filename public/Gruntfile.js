@@ -93,7 +93,12 @@ module.exports = function (grunt) {
         },
         wiredep: {
             dev: {
-                src: ['index.html']
+                src: ['index.html'],
+                "overrides": {
+                    "smooth-scroll": {
+                        "main": ["dist/js/smooth-scroll.js"]
+                    }
+                }
             }
         },
         fileblocks: {
@@ -104,6 +109,9 @@ module.exports = function (grunt) {
                         blocks: {
                             'style': {
                                 src: ['app/styles/main.css']
+                            },
+                            'script': {
+                                src: ['app/scripts/main.js']
                             }
                         }
                     }

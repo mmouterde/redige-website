@@ -12,6 +12,7 @@
   ],
   "dependencies": {
     "bulma": "0.1.0",
-    "mdi": "1.6.50"
+    "mdi": "1.6.50",
+    "smooth-scroll": "https://github.com/cferdinandi/smooth-scroll.git#9.1.4"
   }
 }
