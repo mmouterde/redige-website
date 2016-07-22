@@ -3,6 +3,9 @@
   width: 100%;
 }
 
-section {
-  padding-top: $nav-height;
+.hamburger {
+  background-color: white;
+  &.is-active {
+    background-color: $grey-light;
+  }
 }

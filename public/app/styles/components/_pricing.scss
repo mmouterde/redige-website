@@ -29,6 +29,14 @@ h3.pricing__title {
   box-shadow: 0 0 5px 2px $grey-light;
   &:hover {
     border-color: $rdg-light-blue;
+
+    & .pricing__price {
+      border-top: 3px solid $rdg-light-blue;
+    }
+
+    & .pricing__sentence {
+      border-bottom: 3px solid $rdg-light-blue;
+    }
   }
 }
 

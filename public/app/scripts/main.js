@@ -1,7 +1,40 @@
-document.addEventListener("DOMContentLoaded", function (event) {
+document.addEventListener("DOMContentLoaded", function () {
+    var hamburgerMenu = document.getElementById("hamburger-menu");
+    var nav = document.getElementById("nav-items");
+
     smoothScroll.init({
-        offset: "50px"
+        offset: "50px",
+        callback: function (anchor, toggle) {
+            disableNavItems();
+            toggle.classList.add('is-active');
+            if (hamburgerMenu.classList.contains('is-active')) {
+                hamburgerMenu.classList.remove('is-active');
+                nav.classList.remove('is-active');
+            }
+        }
     });
+
+    // Navbar
+    function disableNavItems() {
+        var items = document.getElementById('nav-items');
+        for (var i = 0; i < items.children.length; i++) {
+            items.children[i].classList.remove('is-active');
+        }
+    }
+
+    hamburgerMenu.addEventListener("click", function () {
+        var className = nav.getAttribute("class");
+        if (className === "nav-right nav-menu") {
+            nav.classList.add("is-active");
+            hamburgerMenu.classList.add('is-active');
+        } else {
+            nav.classList.remove("is-active");
+            hamburgerMenu.classList.remove('is-active');
+        }
+
+    });
+
+    // Pricing Tab
     var pricingTabPersonal = document.getElementById('rdg-tab-personal');
     var pricingTabEnterprise = document.getElementById('rdg-tab-enterprise');
     var pricingPersonal = document.getElementById('rdg-pricing-personal');
@@ -20,4 +53,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
         pricingTabEnterprise.parentElement.classList.add('is-active');
         pricingTabPersonal.parentElement.classList.remove('is-active');
     });
+
+
 });

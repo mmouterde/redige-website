@@ -3766,8 +3766,7 @@ a.panel-block:hover {
     .section.is-medium {
       padding: 120px 20px; }
     .section.is-large {
-      padding: 240px 20px;
-      } }
+      padding: 240px 20px; } }
 
 .footer {
   background-color: #f5f7fa;
@@ -3814,8 +3813,10 @@ a.panel-block:hover {
   position: fixed;
   width: 100%; }
 
-section {
-  padding-top: 50px; }
+.hamburger, .nav-toggle {
+  background-color: white; }
+  .hamburger.is-active, .is-active.nav-toggle {
+    background-color: #d3d6db; }
 
 .pricing {
   display: flex;
@@ -3846,6 +3847,10 @@ h3.pricing__title {
   box-shadow: 0 0 5px 2px #d3d6db; }
   .pricing__item:hover {
     border-color: #2168ff; }
+    .pricing__item:hover .pricing__price {
+      border-top: 3px solid #2168ff; }
+    .pricing__item:hover .pricing__sentence {
+      border-bottom: 3px solid #2168ff; }
 
 ul.pricing__feature-list {
   text-align: center;

@@ -15,7 +15,7 @@ module.exports = function (grunt) {
     var mainTemplate = grunt.file.read('app/sections/main.template.html', {encoding: 'utf8'});
     var navbarTemplate = grunt.file.read('app/sections/navbar.template.html', {encoding: 'utf8'});
     var featuresTemplate = grunt.file.read('app/sections/features.template.html', {encoding: 'utf8'});
-    var targetsTemplate = grunt.file.read('app/sections/targets.template.html', {encoding: 'utf8'});
+    var aboutTemplate = grunt.file.read('app/sections/about.template.html', {encoding: 'utf8'});
     var pricingTemplate = grunt.file.read('app/sections/pricing.template.html', {encoding: 'utf8'});
     var contactTemplate = grunt.file.read('app/sections/contact.template.html', {encoding: 'utf8'});
     var footerTemplate = grunt.file.read('app/sections/footer.template.html', {encoding: 'utf8'});
@@ -64,8 +64,8 @@ module.exports = function (grunt) {
                         replacement: '<!-- replace:navbar -->\n' + navbarTemplate + '\n<!-- end-replace -->'
                     },
                     {
-                        match: 'targets',
-                        replacement: '<!-- replace:targets -->\n' + targetsTemplate + '\n<!-- end-replace -->'
+                        match: 'about',
+                        replacement: '<!-- replace:about -->\n' + aboutTemplate + '\n<!-- end-replace -->'
                     },
                     {
                         match: 'features',
