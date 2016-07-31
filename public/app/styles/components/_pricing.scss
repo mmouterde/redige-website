@@ -44,37 +44,12 @@ h3.pricing__title {
   color: $rdg-light-blue;
 }
 
-
 ul.pricing__feature-list {
   text-align: center;
   margin: 0;
   padding: 0.25em 0 2.5em;
   list-style: none;
   color: $grey-dark;
-}
-
-.pricing__action {
-  border: none;
-  background: none;
-  font-weight: bold;
-  margin-top: auto;
-  padding: 1em 2em;
-  color: #fff;
-  background: $rdg-light-blue;
-  -webkit-transition: background-color 0.3s;
-  transition: background-color 0.3s;
-
-  &:hover {
-    background-color: darken($rdg-light-blue, 5%);
-  }
-
-  &:focus {
-    outline: none;
-  }
-
-  &:active {
-    background-color: darken($rdg-light-blue, 15%);
-  }
 }
 
 .pricing__price {
@@ -100,3 +75,6 @@ ul.pricing__feature-list {
   display: none;
 }
 
+.pricing__valid {
+  margin-top: 35px;
+}

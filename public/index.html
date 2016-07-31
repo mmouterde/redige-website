@@ -46,37 +46,8 @@
 <nav class="nav has-shadow rdg-nav">
     <div class="nav-left">
         <a data-scroll class="nav-item" href="#main">
-            <img src="app/assets/img/redige-icon/redige-icon-128.png" alt="Logo">
+            <img src="app/assets/img/redige-logo.png" class="rdg-logo" alt="Logo">
         </a>
-    </div>
-    <span class="nav-toggle" id="hamburger-menu">
-        <span></span>
-        <span></span>
-        <span></span>
-    </span>
-    <div class="nav-right nav-menu" id="nav-items">
-        <a data-scroll href="#main" class="nav-item is-active">
-            Accueil
-        </a>
-        <a data-scroll href="#about" class="nav-item">
-            A propos
-        </a>
-        <a data-scroll href="#features" class="nav-item">
-            Fonctionnalités
-        </a>
-        <a data-scroll href="#pricing" class="nav-item">
-            Tarifs
-        </a>
-        <a data-scroll href="#contact" class="nav-item">
-            Nous contacter
-        </a>
-        <span class="nav-item">
-            <a href="https://twitter.com/RedigeNet" class="button is-info is-inverted">
-                <span class="icon">
-                    <i class="mdi mdi-twitter"></i>
-                </span>
-            </a>
-        </span>
     </div>
 </nav>
 <!-- end-replace -->
@@ -87,17 +58,19 @@
         <div class="container">
             <div class="columns">
                 <div class="column is-half has-text-centered">
-                    <h1 class="title">
-                        <img src="app/assets/img/redige-logo-white.png" alt="Rédige Logo">
-                    </h1>
-                    <h2 class="subtitle">
-                        La chaine éditoriale pour les documents
-                    </h2>
-                    <p>
-                        <a class="button is-large is-info" href="http://demo.redige.net/">
-                            Venez l'essayer
-                        </a>
-                    </p>
+                    <div style="display:flex;flex-direction: column;height: 70%;">
+                        <h1 class="title">
+                            Ne vous souciez plus de la mise en page !
+                        </h1>
+                        <h2 class="subtitle">
+                            Rédige est un éditeur de texte qui met en page pour vous.
+                        </h2>
+                        <p style="flex-grow: 2;display: flex;justify-content: center;align-items: center;">
+                            <a class="button is-large is-danger" href="#">
+                                Télécharger gratuitement
+                            </a>
+                        </p>
+                    </div>
                 </div>
                 <div class="column has-text-centered">
                     <video class="rdg-video-presentation" src="app/assets/video/example-word720.mp4" controls></video>
@@ -108,61 +81,37 @@
 </section>
 <!-- end-replace -->
 
-<!-- replace:about -->
-<section id="about" class="section is-large">
+<!-- replace:features -->
+<section id="features" class="section is-bold">
     <div class="container">
         <div class="heading has-text-centered">
-            <h2 class="title">A propos</h2>
+            <h1 class="title">Fonctionnalités</h1>
         </div>
         <div class="content">
             <div class="columns is-multiline">
                 <div class="column is-one-third has-text-centered">
-                    <img src="app/assets/img/painter14.png"/>
-                    <h3>1 - Choisissez une palette</h3>
+                    <h3>Mise en page automatique</h3>
 
-                    <p>Article, manuel, roman, présentation, plus qu'un type de document,
-                        la palette c'est un ensemble des <b>éléments sémantiques</b> (mot important, citation,
-                        exemple...).
-                    </p>
+                    <p>Choisissez un type de document, un thème et Rédige met en page votre contenu. <br>Marges,
+                        polices,
+                        tailles des caractères,
+                        encarts, numérotation... Oubliez ces détails techniques et concentrez vous sur le contenu et sa
+                        structure : votre véritable valeur ajoutée.</p>
                 </div>
                 <div class="column is-one-third has-text-centered">
-                    <img src="app/assets/img/gauge.png"/>
-                    <h3>2 - Rédigez !</h3>
+                    <h3>Intégrez vos contraintes</h3>
 
-                    <p> Gardez le focus sur le contenu et sa structure sans vous soucier de la mise en
-                        page.
-                        Ecrivez <b>sans coder</b> en profitant d'un véritable support de travail résistant aux aléas de
-                        l'élaboration.</p>
+                    <p>"Un titre ne doit pas faire plus de 20 mots",
+                        "400 mots maximum"... Importez les contraintes de votre entreprise, maison d'édition, université
+                        :
+                        Rédige vérifie tout cela pour vous.</p>
                 </div>
                 <div class="column is-one-third has-text-centered">
-                    <img src="app/assets/img/computer%20screen16.png"/>
-                    <h3>3 - Exportez</h3>
+                    <h3>Exports variés</h3>
 
-                    <p>﻿﻿﻿﻿﻿﻿Choisissez une mise en forme, un support (site web, pdf, ebook)
-                        et partagez votre travail</p>
-                </div>
-
-
-                <div class="column is-one-third has-text-centered">
-                    <span>Une chaine édito.. quoi ?</span>
-                </div>
-                <div class="column is-one-third has-text-centered">
-                    <span>Qu'est-ce que ça change ?</span>
-                </div>
-                <div class="column is-one-third has-text-centered">
-                    <span>Qui est concerné ?</span>
+                    <p>Votre document est exportable en un clic : PDF, markdown, texte, HTML </p>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
-<!-- end-replace -->
-
-<!-- replace:features -->
-<section id="features" class="section is-info is-bold">
-    <div class="container">
-        <div class="heading has-text-centered">
-            <h1 class="title">Fontionnalités</h1>
         </div>
     </div>
 </section>
@@ -172,131 +121,57 @@
 <section id="pricing" class="section">
     <div class="container">
         <div class="heading has-text-centered">
-            <h1 class="title">Tarifs</h1>
+            <h1 class="title">Gagnez en productivité maintenant</h1>
         </div>
-        <div class="tabs is-toggle is-fullwidth rdg-big-topbottom-margin">
-            <ul>
-                <li class="is-active">
-                    <a id="rdg-tab-personal">
-                        <span>Licence personnelle</span>
-                    </a>
-                </li>
-                <li>
-                    <a id="rdg-tab-enterprise">
-                        <span>Licence entreprise</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div class="content" id="rdg-pricing-personal">
+        <div class="content">
             <div class="pricing">
                 <div class="pricing__item">
-                    <h3 class="pricing__title">Découverte</h3>
-                    <div class="pricing__price"><span class="pricing__amount">Gratuit</span></div>
-                    <p class="pricing__sentence">Perfect for single freelancers who work by themselves</p>
-                    <ul class="pricing__feature-list">
-                        <li class="pricing__feature">Edition en ligne</li>
-                        <li class="pricing__feature">Stockage en ligne</li>
-                        <li class="pricing__feature">Thème par défaut</li>
-                        <li class="pricing__feature">Publication automatique et publique</li>
-                        <li class="pricing__feature">Exportation PDF</li>
-                    </ul>
-                    <button class="pricing__action">Choisir</button>
-                </div>
-                <div class="pricing__item">
-                    <h3 class="pricing__title">Individuel</h3>
+                    <h3 class="pricing__title">Auteur</h3>
                     <div class="pricing__price"><span class="pricing__amount">5<span class="pricing__currency">€</span></span>/mois
                     </div>
-                    <p class="pricing__sentence">Suitable for small businesses with up to 5 employees</p>
+                    <p class="pricing__sentence">pour un usage personnel ou interne</p>
                     <ul class="pricing__feature-list">
-                        <li class="pricing__feature">Fonctionnalités du plan Découverte</li>
-                        <i class="mdi mdi-plus mdi-36px icon-light-blue"></i>
-                        <li class="pricing__feature">Edition hors-ligne</li>
-                        <li class="pricing__feature">Stockage en fichiers</li>
-                        <li class="pricing__feature">Publication à la demande (publique)</li>
+                        <li class="pricing__feature">Edition (si connecté)</li>
+                        <li class="pricing__feature">Export PDF (si connecté)</li>
+                        <li class="pricing__feature">Contraintes/Thèmes par défaut</li>
+                        <li class="pricing__feature">Stockage sur votre ordinateur</li>
                     </ul>
-                    <button class="pricing__action">Choisir</button>
                 </div>
                 <div class="pricing__item">
-                    <h3 class="pricing__title">Individuel plus</h3>
-                    <div class="pricing__price"><span class="pricing__amount">10<span class="pricing__currency">€</span></span>/mois
-                    </div>
-                    <p class="pricing__sentence">Great for large businesses with more than 5 employees</p>
-                    <ul class="pricing__feature-list">
-                        <li class="pricing__feature">Fonctionnalités du plan Individuel</li>
-                        <i class="mdi mdi-plus mdi-36px icon-light-blue"></i>
-                        <li class="pricing__feature">Thème customisé</li>
-                        <li class="pricing__feature">Ajout de norme de rédaction</li>
-                        <li class="pricing__feature">Publication à la demande (publique/restreinte)</li>
-                    </ul>
-                    <button class="pricing__action">Choisir</button>
-                </div>
-            </div>
-        </div>
-        <div class="content" id="rdg-pricing-enterprise">
-            <div class="pricing">
-                <div class="pricing__item">
-                    <h3 class="pricing__title">Business</h3>
-                    <div class="pricing__price"><span class="pricing__amount">100<span
+                    <h3 class="pricing__title">Auteur Pro</h3>
+                    <div class="pricing__price"><span class="pricing__amount">10<span
                             class="pricing__currency">€</span></span>/mois
                     </div>
-                    <p class="pricing__sentence">Perfect for single freelancers who work by themselves</p>
+                    <p class="pricing__sentence">pour un usage pro</p>
                     <ul class="pricing__feature-list">
-                        <li class="pricing__feature">20 licences individuelles Pro</li>
+                        <i class="mdi mdi-plus mdi-36px icon-light-blue"></i>
+                        <li class="pricing__feature">Edition hors-ligne</li>
+                        <li class="pricing__feature">Export PDF hors-ligne</li>
+                        <li class="pricing__feature">Editeur de contraintes/themes</li>
+                        <li class="pricing__feature">Import de contraintes/thèmes</li>
                     </ul>
-                    <button class="pricing__action">Choisir</button>
                 </div>
                 <div class="pricing__item">
-                    <h3 class="pricing__title">Licence Serveur</h3>
-                    <div class="pricing__price"><a class="button is-success" href="#contact">Nous contacter</a></div>
-                    <p class="pricing__sentence">Suitable for small businesses with up to 5 employees</p>
+                    <h3 class="pricing__title">Entreprise</h3>
+                    <div class="pricing__price"><span class="pricing__amount">sur mesure</div>
+                    <p class="pricing__sentence">&nbsp;</p>
                     <ul class="pricing__feature-list">
-                        <li class="pricing__feature">Auto hébergement</li>
+                        <li class="pricing__feature">licences flottantes ?</li>
+                        <li class="pricing__feature">serveur dédié ?</li>
+                        <li class="pricing__feature">support ?</li>
                     </ul>
-                    <button class="pricing__action">Choisir</button>
+                    <button class="button">Nous contacter</button>
                 </div>
+
+                <div class="pricing__valid">
+                    <button class="button is-large is-danger">Télécharger Gratuitement</button>
+                    <p class="has-text-centered">Sans engagement ni carte de crédit</p>
+                </div>
+
+
             </div>
         </div>
     </div>
-</section>
-<!-- end-replace -->
-
-<!-- replace:contact -->
-<section id="contact" class="section is-info is-bold ">
-        <div class="container">
-            <div class="heading has-text-centered">
-                <h2 class="title">Nous contacter</h2>
-                <h3 class="subtitle">Inscrivez vous pour être prévenu de la sortie.</h3>
-            </div>
-            <div class="content rdg-big-topbottom-margin">
-                <div class="columns">
-                    <div class="column is-half is-offset-one-quarter">
-                        <div class="control is-horizontal">
-                            <div class="control is-grouped">
-                                <p class="control is-expanded">
-                                    <input type="text" class="input" placeholder="Nom">
-
-                                </p>
-                                <p class="control is-expanded">
-                                    <input type="text" class="input" placeholder="Prénom">
-                                </p>
-                            </div>
-                        </div>
-                        <div class="control is-horizontal">
-                            <p class="control">
-                                <input class="input" type="email" placeholder="Adresse mail">
-                            </p>
-                        </div>
-                        <div class="control is-horizontal">
-                            <div class="control">
-                                <textarea class="textarea" rows="10" placeholder="Votre message"></textarea>
-                            </div>
-                        </div>
-                        <button class="button is-success is-medium is-pulled-right">S'inscrire</button>
-                    </div>
-                </div>
-            </div>
-        </div>
 </section>
 <!-- end-replace -->
 
@@ -308,7 +183,15 @@
                 <strong>Rédige</strong> made with <i class="mdi mdi-heart"></i> by Martin Mouterde.
             </p>
             <p>
-                Copyright © 2015. www.redige.net - All Rights Reserved
+                Copyright © 2016. <a class="is-info is-small" href="https://www.redige.net">www.redige.net</a> - All
+                Rights Reserved
+            </p>
+            <p>
+                <a href="https://twitter.com/RedigeNet">
+                   <span class="icon">
+                    <i class="mdi mdi-twitter "></i>
+                    </span>
+                </a>
             </p>
         </div>
     </div>
