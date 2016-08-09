@@ -3900,15 +3900,28 @@ ul.pricing__feature-list {
 .pricing__valid {
   margin-top: 35px; }
 
-.section.is-lightblue-bg {
-  background-color: #2168ff; }
-.section.is-info {
-  background-color: #2168ff;
-  color: white; }
-  .section.is-info .title, .section.is-info .subtitle {
+.section {
+  padding-top: 70px; }
+  .section.is-lightblue {
+    background-color: #2168ff;
     color: white; }
-  .section.is-info.is-bold {
-    background-image: linear-gradient(141deg, #0073ed 0%, #2168ff 71%, #3b59ff 100%); }
+    .section.is-lightblue .title, .section.is-lightblue .subtitle {
+      color: white; }
+    .section.is-lightblue.is-bold {
+      background-image: linear-gradient(141deg, #0073ed 0%, #2168ff 71%, #3b59ff 100%); }
+  .section.is-darkblue {
+    background-color: #152133;
+    color: white; }
+    .section.is-darkblue .title, .section.is-darkblue .subtitle {
+      color: white; }
+    .section.is-darkblue.is-bold {
+      background-image: linear-gradient(141deg, #050b10 0%, #152133 71%, #1a2548 100%); }
+
+.column-flex-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: stretch; }
 
 .section .container .heading {
   margin-bottom: 50px; }

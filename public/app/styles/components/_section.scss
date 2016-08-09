@@ -1,10 +1,7 @@
 .section {
+  padding-top: 70px;
 
-  &.is-lightblue-bg {
-    background-color: $rdg-light-blue;
-  }
-
-  &.is-info {
+  &.is-lightblue {
     background-color: $rdg-light-blue;
     color: white;
 
@@ -18,6 +15,29 @@
       background-image: linear-gradient(141deg, $gradient-top-left 0%, $rdg-light-blue 71%, $gradient-bottom-right 100%);
     }
   }
+
+  &.is-darkblue {
+    background-color: $rdg-dark-blue;
+    color: white;
+
+    .title, .subtitle {
+      color: white;
+    }
+
+    &.is-bold {
+      $gradient-top-left: darken(saturate(adjust-hue($rdg-dark-blue, -10deg), 10%), 10%);
+      $gradient-bottom-right: lighten(saturate(adjust-hue($rdg-dark-blue, 10deg), 5%), 5%);
+      background-image: linear-gradient(141deg, $gradient-top-left 0%, $rdg-dark-blue 71%, $gradient-bottom-right 100%);
+    }
+  }
+
+}
+
+.column-flex-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: stretch;
 }
 
 .section .container .heading {
