@@ -1,0 +1,18 @@
+.footer {
+  a.twitter {
+    border-bottom: 0;
+
+    i {
+      color: $rdg-light-blue;
+
+      &:hover {
+        color: darken($rdg-light-blue, 5%);
+      }
+      &:active {
+        color: darken($rdg-light-blue, 10%);
+      }
+
+    }
+
+  }
+}
