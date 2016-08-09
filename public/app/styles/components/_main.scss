@@ -1,0 +1,7 @@
+.scroll-down {
+  color: white;
+
+  &:hover {
+    color: darken(white, 20%);
+  }
+}

@@ -3818,6 +3818,11 @@ a.panel-block:hover {
   padding: 5px;
   border: 1px solid #d3d6db; }
 
+.scroll-down {
+  color: white; }
+  .scroll-down:hover {
+    color: #cccccc; }
+
 .rdg-nav {
   position: fixed;
   width: 100%;
