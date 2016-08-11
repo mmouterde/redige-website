@@ -3873,7 +3873,8 @@ h3.pricing__title {
     .pricing__item.pricing__middle h3.pricing__title {
       color: #152133;
       font-size: xx-large;
-      margin-bottom: 0.8em; }
+      margin-bottom: 0.8em;
+      margin-top: -10px; }
 
 .pricing__amount {
   color: #2168ff; }
@@ -3934,7 +3935,8 @@ ul.pricing__feature-list {
   margin-bottom: 50px; }
 
 #features [class^="icon-"] {
-  color: #152133; }
+  color: #152133;
+  margin-right: 9px; }
 
 .rdg-video-presentation {
   width: 100%; }
