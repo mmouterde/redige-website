@@ -3790,7 +3790,7 @@ a.panel-block:hover {
     text-underline: none;
     background-color: #004ced; }
   .rdg-button:active {
-    background-color: #0044d4; }
+    background-color: #0044d3; }
 
 .rdg-big {
   margin: 15px;
@@ -3807,7 +3807,7 @@ a.panel-block:hover {
   .footer a.twitter i {
     color: #2168ff; }
     .footer a.twitter i:hover {
-      color: #0857ff; }
+      color: #0757ff; }
     .footer a.twitter i:active {
       color: #004ced; }
 
@@ -3867,7 +3867,9 @@ h3.pricing__title {
       border-bottom: 3px solid #2168ff; }
   .pricing__item.pricing__middle {
     margin: 0;
-    z-index: 10; }
+    z-index: 10;
+    border-top-width: 15px;
+    border-top-color: #2168ff; }
     .pricing__item.pricing__middle h3.pricing__title {
       color: #152133;
       font-size: xx-large;
@@ -3913,14 +3915,14 @@ ul.pricing__feature-list {
     .section.is-lightblue .title, .section.is-lightblue .subtitle {
       color: white; }
     .section.is-lightblue.is-bold {
-      background-image: linear-gradient(141deg, #0073ed 0%, #2168ff 71%, #3b59ff 100%); }
+      background-image: linear-gradient(141deg, #0073ed 0%, #2168ff 43%, #3b59ff 100%); }
   .section.is-darkblue {
     background-color: #152133;
     color: white; }
     .section.is-darkblue .title, .section.is-darkblue .subtitle {
       color: white; }
     .section.is-darkblue.is-bold {
-      background-image: linear-gradient(141deg, #050b10 0%, #152133 71%, #1a2548 100%); }
+      background-image: linear-gradient(141deg, #050b10 0%, #152133 43%, #1a2548 100%); }
 
 .column-flex-content {
   display: flex;
@@ -3930,6 +3932,9 @@ ul.pricing__feature-list {
 
 .section .container .heading {
   margin-bottom: 50px; }
+
+#features [class^="icon-"] {
+  color: #152133; }
 
 .rdg-video-presentation {
   width: 100%; }
