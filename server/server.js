@@ -6,7 +6,7 @@
     var server = restify.createServer();
 
     server.get(/\/*/, restify.serveStatic({
-        directory: './public/app',
+        directory: './public',
         default: 'index.html'
     }));
 

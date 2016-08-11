@@ -4,7 +4,6 @@ module.exports = function (grunt) {
 
     require('jit-grunt')(grunt, {
         fileblocks: 'grunt-file-blocks',
-        protractor: 'grunt-protractor-runner',
         libsass: 'grunt-contrib-sass',
         connect: 'grunt-contrib-connect',
         watch: 'grunt-contrib-watch',
@@ -50,6 +49,18 @@ module.exports = function (grunt) {
                     dest: 'app/styles',
                     ext: '.css'
                 }]
+            },
+            dist: {
+                options: {
+                    sourcemap: 'none'
+                },
+                files: [{
+                    expand: true,
+                    cwd: 'app/styles',
+                    src: ['**/*.scss'],
+                    dest: 'app/styles',
+                    ext: '.css'
+                }]
             }
         },
         replace: {
@@ -85,7 +96,7 @@ module.exports = function (grunt) {
                     }
                 ]
             },
-            dev: {
+            all: {
                 files: {
                     'index.html': 'index.html'
                 }
@@ -99,16 +110,24 @@ module.exports = function (grunt) {
                         "main": ["dist/js/smooth-scroll.js"]
                     }
                 }
+            },
+            dist: {
+                src: ['index.html'],
+                "overrides": {
+                    "smooth-scroll": {
+                        "main": ["dist/js/smooth-scroll.min.js"]
+                    }
+                }
             }
         },
         fileblocks: {
-            dev: {
+            all: {
                 files: [
                     {
                         src: 'index.html',
                         blocks: {
                             'style': {
-                                src: ['app/styles/main.css']
+                                src: ['app/styles/*.css']
                             },
                             'script': {
                                 src: ['app/scripts/main.js']
@@ -129,18 +148,37 @@ module.exports = function (grunt) {
                 options: {
                     port: 9002,
                     hostname: 'localhost'
-
+                }
+            }
+        },
+        htmlmin: {
+            dist: {
+                options: {
+                    removeComments: true,
+                    collapseWhitespace: false
+                },
+                files: {
+                    'index.html': 'index.html'
                 }
             }
         }
     });
 
+    grunt.registerTask('dist', [
+        'copy:index',
+        'sass:dist',
+        'wiredep:dist',
+        'fileblocks:all',
+        'replace:all',
+        'htmlmin:dist'
+    ]);
+
     grunt.registerTask('dev', [
         'copy:index',
         'sass:dev',
         'wiredep:dev',
-        'fileblocks:dev',
-        'replace:dev',
+        'fileblocks:all',
+        'replace:all',
         'connect:all',
         'watch'
     ]);
