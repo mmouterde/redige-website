@@ -32,8 +32,8 @@ module.exports = function (grunt) {
                 tasks: [
                     'copy:index',
                     'wiredep:dev',
-                    'fileblocks:dev',
-                    'replace:dev'
+                    'fileblocks:all',
+                    'replace:all'
                 ],
                 options: {
                     reload: true
