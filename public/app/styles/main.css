@@ -3803,12 +3803,15 @@ a.panel-block:hover {
   font-size: larger; }
 
 .footer a.twitter {
+  align-items: center;
+  display: flex;
+  justify-content: center;
   border-bottom: 0; }
-  .footer a.twitter i {
+  .footer a.twitter span {
     color: #2168ff; }
-    .footer a.twitter i:hover {
+    .footer a.twitter span:hover {
       color: #0757ff; }
-    .footer a.twitter i:active {
+    .footer a.twitter span:active {
       color: #004ced; }
 
 .rdg-image-presentation {

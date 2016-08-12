@@ -1,8 +1,12 @@
 .footer {
   a.twitter {
+
+    align-items: center;
+    display: flex;
+    justify-content: center;
     border-bottom: 0;
 
-    i {
+    span {
       color: $rdg-light-blue;
 
       &:hover {
