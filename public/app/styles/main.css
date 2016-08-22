@@ -3802,6 +3802,16 @@ a.panel-block:hover {
   padding: 5px;
   font-size: larger; }
 
+.os-icon {
+  line-height: 2;
+  margin: 8px; }
+
+.subtitle .os-icon {
+  opacity: 0.2; }
+
+.subtitle .os-icon:hover {
+  opacity: 1; }
+
 .footer a.twitter {
   align-items: center;
   display: flex;
@@ -3816,6 +3826,15 @@ a.panel-block:hover {
 
 .rdg-image-presentation {
   width: 100%; }
+
+.icon-48px {
+  font-size: 48px; }
+
+.icon-36px {
+  font-size: 36px; }
+
+.icon-24px {
+  font-size: 24px; }
 
 .rdg-input {
   padding: 5px;

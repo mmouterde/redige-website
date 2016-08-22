@@ -27,3 +27,16 @@
   padding: 5px;
   font-size: larger;
 }
+
+.os-icon {
+  line-height: 2;
+  margin: 8px;
+}
+
+.subtitle .os-icon {
+  opacity: 0.2;
+}
+
+.subtitle .os-icon:hover {
+  opacity: 1;
+}

@@ -1,0 +1,20 @@
+.os-windows {
+}
+
+.os-mac {
+    display: none;
+}
+
+.os-linux {
+    display: none;
+}
+
+.os-not-windows {
+    display: none;
+}
+
+.os-not-mac {
+}
+
+.os-not-linux {
+}

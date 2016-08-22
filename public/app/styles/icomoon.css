@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'icomoon';
-    src: url('../assets/fonts/icomoon.eot?upvu4w');
-    src: url('../assets/fonts/icomoon.eot?upvu4w#iefix') format('embedded-opentype'),
-    url('../assets/fonts/icomoon.ttf?upvu4w') format('truetype'),
-    url('../assets/fonts/icomoon.woff?upvu4w') format('woff'),
-    url('../assets/fonts/icomoon.svg?upvu4w#icomoon') format('svg');
+    src: url('../assets/fonts/icomoon.eot?vlo7h1');
+    src: url('../assets/fonts/icomoon.eot?vlo7h1#iefix') format('embedded-opentype'),
+    url('../assets/fonts/icomoon.ttf?vlo7h1') format('truetype'),
+    url('../assets/fonts/icomoon.woff?vlo7h1') format('woff'),
+    url('../assets/fonts/icomoon.svg?vlo7h1#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -22,6 +22,18 @@
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-linux:before {
+    content: "\f17c";
+}
+
+.icon-apple:before {
+    content: "\f179";
+}
+
+.icon-windows:before {
+    content: "\f17a";
 }
 
 .icon-magic:before {
@@ -52,14 +64,3 @@
     content: "\f25b";
 }
 
-.icon-48px {
-    font-size: 48px;
-}
-
-.icon-36px {
-    font-size: 36px;
-}
-
-.icon-24px {
-    font-size: 24px;
-}

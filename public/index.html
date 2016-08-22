@@ -64,9 +64,36 @@
                     Rédige est un éditeur de texte qui met en page pour vous.
                 </h2>
                 <p>
-                    <a class="button is-large is-danger" href="#">
+                    <a class="button is-large is-danger os-windows"
+                       href="http://5.135.228.103/files/Redige-win32-x64-installer/RedigeSetup.exe">
+                        <span class="os-icon icon-windows icon-24px"></span>
                         Télécharger & Essayer gratuitement
                     </a>
+                    <a class="button is-large is-danger os-linux"
+                       href="http://5.135.228.103/files/Redige-linux-x64_0.0.3.tar.gz">
+                        <span class="os-icon icon-linux icon-24px"></span>
+                        Télécharger & Essayer gratuitement
+                    </a>
+                    <!--
+                    <a class="button is-large is-danger os-mac" href="#">
+                        <span class="os-icon icon-apple icon-24px"></span>
+                        Télécharger & Essayer gratuitement
+                    </a>
+                    -->
+                </p>
+                <p>
+                    <a class="subtitle os-not-windows"
+                       href="http://5.135.228.103/files/Redige-win32-x64-installer/RedigeSetup.exe">
+                        <span class="os-icon icon-windows icon-24px"> </span>
+                    </a>
+                    <a class="subtitle os-not-linux" href="http://5.135.228.103/files/Redige-linux-x64_0.0.3.tar.gz">
+                        <span class="os-icon icon-linux icon-24px"> </span>
+                    </a>
+                    <!--
+                   <a class="subtitle os-not-mac" href="#">
+                       <span class="os-icon icon-apple icon-24px"> </span>
+                   </a>
+                   -->
                 </p>
             </div>
             <div class="column has-text-centered">
@@ -163,8 +190,39 @@
                 </div>
 
                 <div class="pricing__valid">
-                    <button class="button is-large is-danger">Télécharger & Essayer gratuitement</button>
-                    <p class="has-text-centered">Sans engagement ni carte de crédit</p>
+                    <p>
+                        <a class="button is-large is-danger os-windows"
+                           href="http://5.135.228.103/files/Redige-win32-x64-installer/RedigeSetup.exe">
+                            <span class="os-icon icon-windows icon-24px"></span>
+                            Télécharger & Essayer gratuitement
+                        </a>
+                        <a class="button is-large is-danger os-linux"
+                           href="http://5.135.228.103/files/Redige-linux-x64_0.0.3.tar.gz">
+                            <span class="os-icon icon-linux icon-24px"></span>
+                            Télécharger & Essayer gratuitement
+                        </a>
+                        <!--
+                        <a class="button is-large is-danger os-mac" href="#">
+                            <span class="os-icon icon-apple icon-24px"></span>
+                            Télécharger & Essayer gratuitement
+                        </a>
+                        -->
+                    </p>
+                    <p class="has-text-centered">
+                        <a class="subtitle os-not-windows"
+                           href="http://5.135.228.103/files/Redige-win32-x64-installer/RedigeSetup.exe">
+                            <span class="os-icon icon-windows icon-24px"> </span>
+                        </a>
+                        <a class="subtitle os-not-linux"
+                           href="http://5.135.228.103/files/Redige-linux-x64_0.0.3.tar.gz">
+                            <span class="os-icon icon-linux icon-24px"> </span>
+                        </a>
+                        <!--
+                        <a class="subtitle os-not-mac" href="#">
+                            <span class="os-icon icon-apple icon-24px"> </span>
+                        </a>
+                        -->
+                    </p>
                 </div>
             </div>
         </div>
@@ -196,6 +254,10 @@
 <!-- build:js -->
 <!-- bower:js -->
 <script src="bower_components/smooth-scroll/dist/js/smooth-scroll.js"></script>
+<script src="bower_components/conditionizr/dist/conditionizr.js"></script>
+<script src="bower_components/conditionizr/detects/windows.js"></script>
+<script src="bower_components/conditionizr/detects/mac.js"></script>
+<script src="bower_components/conditionizr/detects/linux.js"></script>
 <!-- endbower -->
 <!-- fileblock:js script-->
 <script src="app/scripts/main.js"></script>

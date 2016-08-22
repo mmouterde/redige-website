@@ -108,6 +108,9 @@ module.exports = function (grunt) {
                 "overrides": {
                     "smooth-scroll": {
                         "main": ["dist/js/smooth-scroll.js"]
+                    },
+                    "conditionizr": {
+                        "main": ["dist/conditionizr.js", "detects/windows.js", "detects/mac.js", "detects/linux.js"]
                     }
                 }
             },
@@ -116,6 +119,9 @@ module.exports = function (grunt) {
                 "overrides": {
                     "smooth-scroll": {
                         "main": ["dist/js/smooth-scroll.min.js"]
+                    },
+                    "conditionizr": {
+                        "main": ["dist/conditionizr.js", "detects/windows.js", "detects/mac.js", "detects/linux.js"]
                     }
                 }
             }
@@ -127,7 +133,7 @@ module.exports = function (grunt) {
                         src: 'index.html',
                         blocks: {
                             'style': {
-                                src: ['app/styles/*.css']
+                                src: ['app/styles/*.css', '!app/styles/os*.css']
                             },
                             'script': {
                                 src: ['app/scripts/main.js']

@@ -12,6 +12,7 @@
   ],
   "dependencies": {
     "bulma": "0.1.0",
-    "smooth-scroll": "https://github.com/cferdinandi/smooth-scroll.git#9.1.4"
+    "smooth-scroll": "https://github.com/cferdinandi/smooth-scroll.git#9.1.4",
+    "conditionizr": "4.5.1"
   }
 }
