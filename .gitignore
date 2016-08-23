@@ -6,3 +6,8 @@
 /public/bower_components/bulma/
 /public/bower_components/smooth-scroll/
 !/public/bower_components/smooth-scroll/dist/js/smooth-scroll.js
+/public/bower_components/conditionizr
+!/public/bower_components/conditionizr/detects/mac.js
+!/public/bower_components/conditionizr/detects/windows.js
+!/public/bower_components/conditionizr/detects/linux.js
+!/public/bower_components/conditionizr/dist/conditionizr.js
