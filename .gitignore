@@ -5,7 +5,7 @@
 /public/app/styles/main.css.map
 /public/bower_components/bulma/*
 !/public/bower_components/bulma/bulma.sass
-!/public/bower_components/bulma/sass/*
+!/public/bower_components/bulma/sass
 /public/bower_components/smooth-scroll/*
 !/public/bower_components/smooth-scroll/dist/js/smooth-scroll.js
 /public/bower_components/conditionizr/*
