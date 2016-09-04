@@ -3790,7 +3790,7 @@ a.panel-block:hover {
     text-underline: none;
     background-color: #004ced; }
   .rdg-button:active {
-    background-color: #0044d3; }
+    background-color: #0044d4; }
 
 .rdg-big {
   margin: 15px;
@@ -3815,7 +3815,7 @@ a.panel-block:hover {
   .footer a.twitter span {
     color: #2168ff; }
     .footer a.twitter span:hover {
-      color: #0757ff; }
+      color: #0857ff; }
     .footer a.twitter span:active {
       color: #004ced; }
 
@@ -4023,5 +4023,3 @@ ul.pricing__feature-list {
 
 .icon-light-blue {
   color: #2168ff; }
-
-/*# sourceMappingURL=main.css.map */
