@@ -16,6 +16,7 @@ module.exports = function (grunt) {
     var featuresTemplate = grunt.file.read('app/sections/features.template.html', {encoding: 'utf8'});
     var aboutTemplate = grunt.file.read('app/sections/about.template.html', {encoding: 'utf8'});
     var pricingTemplate = grunt.file.read('app/sections/pricing.template.html', {encoding: 'utf8'});
+    var downloadTemplate = grunt.file.read('app/sections/download.template.html', {encoding: 'utf8'});
     var contactTemplate = grunt.file.read('app/sections/contact.template.html', {encoding: 'utf8'});
     var footerTemplate = grunt.file.read('app/sections/footer.template.html', {encoding: 'utf8'});
 
@@ -85,6 +86,9 @@ module.exports = function (grunt) {
                     {
                         match: 'pricing',
                         replacement: '<!-- replace:pricing -->\n' + pricingTemplate + '\n<!-- end-replace -->'
+                    }, {
+                        match: 'download',
+                        replacement: '<!-- replace:download -->\n' + downloadTemplate + '\n<!-- end-replace -->'
                     },
                     {
                         match: 'contact',
@@ -133,7 +137,7 @@ module.exports = function (grunt) {
                         src: 'index.html',
                         blocks: {
                             'style': {
-                                src: ['app/styles/*.css', '!app/styles/os*.css']
+                                src: ['app/styles/*.css']
                             },
                             'script': {
                                 src: ['app/scripts/main.js']

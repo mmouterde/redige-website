@@ -1,6 +1,6 @@
 {
   "name": "redige-website",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "server.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "author": "mmouterde",
   "dependencies": {
-    "restify": "4.0.4"
+    "restify": "4.1.1"
   },
   "devDependencies": {
     "autoprefixer": "6.3.6",

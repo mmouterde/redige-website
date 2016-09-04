@@ -3790,7 +3790,7 @@ a.panel-block:hover {
     text-underline: none;
     background-color: #004ced; }
   .rdg-button:active {
-    background-color: #0044d4; }
+    background-color: #0044d3; }
 
 .rdg-big {
   margin: 15px;
@@ -3804,13 +3804,8 @@ a.panel-block:hover {
 
 .os-icon {
   line-height: 2;
-  margin: 8px; }
-
-.subtitle .os-icon {
-  opacity: 0.2; }
-
-.subtitle .os-icon:hover {
-  opacity: 1; }
+  margin: 8px;
+  color: #2168ff; }
 
 .footer a.twitter {
   align-items: center;
@@ -3820,7 +3815,7 @@ a.panel-block:hover {
   .footer a.twitter span {
     color: #2168ff; }
     .footer a.twitter span:hover {
-      color: #0857ff; }
+      color: #0757ff; }
     .footer a.twitter span:active {
       color: #004ced; }
 
@@ -3835,6 +3830,9 @@ a.panel-block:hover {
 
 .icon-24px {
   font-size: 24px; }
+
+.icon-100px {
+  font-size: 100px; }
 
 .rdg-input {
   padding: 5px;
@@ -3960,6 +3958,9 @@ ul.pricing__feature-list {
   color: #152133;
   margin-right: 9px; }
 
+#download {
+  padding-bottom: 70px; }
+
 .rdg-video-presentation {
   width: 100%; }
 
@@ -4022,3 +4023,5 @@ ul.pricing__feature-list {
 
 .icon-light-blue {
   color: #2168ff; }
+
+/*# sourceMappingURL=main.css.map */
