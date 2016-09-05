@@ -3790,7 +3790,7 @@ a.panel-block:hover {
     text-underline: none;
     background-color: #004ced; }
   .rdg-button:active {
-    background-color: #0044d4; }
+    background-color: #0044d3; }
 
 .rdg-big {
   margin: 15px;
@@ -3815,7 +3815,7 @@ a.panel-block:hover {
   .footer a.twitter span {
     color: #2168ff; }
     .footer a.twitter span:hover {
-      color: #0857ff; }
+      color: #0757ff; }
     .footer a.twitter span:active {
       color: #004ced; }
 
@@ -3873,7 +3873,7 @@ h3.pricing__title {
   margin: 1em 0;
   padding: 2em 2.5em;
   color: #152133;
-  background: #EEF0F3;
+  background: #fff;
   border-top: 3px solid #EEF0F3;
   -webkit-transition: border-color 0.3s;
   transition: border-color 0.3s;
@@ -3937,6 +3937,8 @@ ul.pricing__feature-list {
       color: white; }
     .section.is-lightblue.is-bold {
       background-image: linear-gradient(141deg, #0073ed 0%, #2168ff 43%, #3b59ff 100%); }
+  .section.is-lightgrey {
+    background-color: #f5f7fa; }
   .section.is-darkblue {
     background-color: #152133;
     color: white; }
@@ -3952,7 +3954,10 @@ ul.pricing__feature-list {
   align-content: stretch; }
 
 .section .container .heading {
-  margin-bottom: 50px; }
+  margin-bottom: 70px; }
+
+.section .content {
+  margin-bottom: 90px; }
 
 #features [class^="icon-"] {
   color: #152133;
@@ -4023,3 +4028,5 @@ ul.pricing__feature-list {
 
 .icon-light-blue {
   color: #2168ff; }
+
+/*# sourceMappingURL=main.css.map */
