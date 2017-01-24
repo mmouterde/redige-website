@@ -1,9 +1,9 @@
 NodeList.prototype.forEach = Array.prototype.forEach;
 
 var version = "0.0.10";
-var winURL = "http://5.135.228.103/files/Redige-win32-x64-installer/RedigeSetup.exe";
-var linURL = "http://5.135.228.103/files/Redige-linux-x64_" + version + ".tar.gz";
-var macURL = "http://5.135.228.103/files/Redige-darwin-x64_" + version + ".zip";
+var winURL = "http://download.redige.net/files/Redige-win32-x64-installer/RedigeSetup.exe";
+var linURL = "http://download.redige.net/files/Redige-linux-x64_" + version + ".tar.gz";
+var macURL = "http://download.redige.net/files/Redige-darwin-x64_" + version + ".zip";
 var currentURL = winURL;
 
 document.addEventListener("DOMContentLoaded", function () {
