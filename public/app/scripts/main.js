@@ -20,11 +20,7 @@ if (conditionizr.windows) {
     currentURL = macURL;
 }
 
-var links = document.querySelectorAll('.download-button');
-[].forEach.call(links, function (link) {
-    link.href = currentURL;
-});
-
+document.getElementById('download-button').href = currentURL;
 document.getElementById('download-button-mac').href = macURL;
 document.getElementById('download-button-win').href = winURL;
 document.getElementById('download-button-lin').href = linURL;
