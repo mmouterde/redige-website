@@ -24,24 +24,32 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-chevron-right:before {
-    content: "\f054";
+.icon-download:before {
+    content: "\e900";
 }
 
-.icon-lock:before {
-    content: "\f023";
+.icon-save:before {
+    content: "\e900";
 }
 
-.icon-linux:before {
-    content: "\f17c";
+.icon-store:before {
+    content: "\e900";
+}
+
+.icon-windows:before {
+    content: "\f17a";
 }
 
 .icon-apple:before {
     content: "\f179";
 }
 
-.icon-windows:before {
-    content: "\f17a";
+.icon-linux:before {
+    content: "\f17c";
+}
+
+.icon-bitbucket:before {
+    content: "\f171";
 }
 
 .icon-magic:before {

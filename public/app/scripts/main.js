@@ -32,10 +32,3 @@ function handleDownloadClicks(event) {
         eventLabel: event.target.href
     });
 }
-document.getElementsByTagName('video')[0].addEventListener("playing", function () {
-    ga('send', 'event', {
-        eventCategory: 'Video',
-        eventAction: 'play',
-        eventLabel: 'play'
-    });
-});

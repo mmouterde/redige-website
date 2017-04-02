@@ -1,22 +1,9 @@
 .footer {
-  a.twitter {
+  a {
+    margin-right: 10px;
+  }
 
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    border-bottom: 0;
-
-    span {
-      color: $rdg-light-blue;
-
-      &:hover {
-        color: darken($rdg-light-blue, 5%);
-      }
-      &:active {
-        color: darken($rdg-light-blue, 10%);
-      }
-
-    }
-
+  a:not(.icon), .footer a:visited:not(.icon) {
+    border-bottom: none;
   }
 }

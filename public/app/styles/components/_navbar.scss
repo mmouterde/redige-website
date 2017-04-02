@@ -1,7 +1,12 @@
+
 .rdg-nav {
-  position: fixed;
+  position: absolute;
   width: 100%;
   z-index: 20;
+  background-color: transparent;
+  .nav-item a:hover, a.nav-item:hover {
+    color: #fff;
+  }
 }
 
 .nav-item img.rdg-logo {
