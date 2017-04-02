@@ -44,13 +44,18 @@
 
 <!-- replace:navbar -->
 <nav class="nav rdg-nav">
-    <div class="container">
-        <div class="nav-left">
+    <div class="container is-block-mobile">
+        <div class="nav-left  is-hidden-mobile">
             <a data-scroll class="nav-item" href="#main">
                 <img src="app/assets/img/redige-logo-white.png" width="90px" class="rdg-logo" alt="Logo Rédige">
             </a>
         </div>
-        <div class="nav-right">
+        <div class="nav-center is-hidden-desktop is-hidden-tablet is-hidden-widescreen">
+            <a data-scroll class="nav-item" href="#main">
+                <img src="app/assets/img/redige-logo-white.png" width="90px" class="rdg-logo" alt="Logo Rédige">
+            </a>
+        </div>
+        <div class="nav-right is-hidden-mobile">
             <a class="nav-item download" target="_self" href="#download" alt="download Redige">
                 <span class="icon icon-download is-small"> </span> Télécharger Redige
             </a>
@@ -83,7 +88,7 @@
                        id="download-button"
                        onclick="handleDownloadClicks(event)"
                        href="http://download.redige.net/files/Redige-win32-x64-installer/RedigeSetup.exe">
-                        Télécharger & Essayer gratuitement
+                        <span>Télécharger</span><span class="is-hidden-mobile"> & Essayer gratuitement</span>
                     </a>
                 </p>
             </div>
@@ -181,7 +186,7 @@
         <div class="content">
             <div class="pricing">
                 <p>
-                    <a class="button is-large is-danger download-button"
+                    <a class="button is-large is-danger download-button is-hidden-mobile"
                        onclick="handleDownloadClicks(event)"
                        href="http://5.135.228.103/files/Redige-win32-x64-installer/RedigeSetup.exe">
                         Télécharger & Essayer gratuitement
