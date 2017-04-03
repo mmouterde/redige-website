@@ -45,16 +45,6 @@
 <!-- replace:navbar -->
 <nav class="nav rdg-nav">
     <div class="container is-block-mobile">
-        <div class="nav-left  is-hidden-mobile">
-            <a data-scroll class="nav-item" href="#main">
-                <img src="app/assets/img/redige-logo-white.png" width="90px" class="rdg-logo" alt="Logo Rédige">
-            </a>
-        </div>
-        <div class="nav-center is-hidden-desktop is-hidden-tablet is-hidden-widescreen">
-            <a data-scroll class="nav-item" href="#main">
-                <img src="app/assets/img/redige-logo-white.png" width="90px" class="rdg-logo" alt="Logo Rédige">
-            </a>
-        </div>
         <div class="nav-right is-hidden-mobile">
             <a class="nav-item download" target="_self" href="#download" alt="download Redige">
                 <span class="icon icon-download is-small"> </span> Télécharger Redige
@@ -73,10 +63,13 @@
 <!-- end-replace -->
 
 <!-- replace:main -->
-<section id="main" class="section is-darkblue is-bold">
+<section id="main" class="section is-bold">
     <div class="container">
-        <div class="columns">
-            <div class="column is-half has-text-centered column-flex-content">
+        <div class="columns has-text-centered">
+            <div class="column has-text-centered column-flex-content">
+                <h1 class="logo">
+                    <img src="app/assets/img/redige-logo-white.png"/>
+                </h1>
                 <h1 class="title">
                     Ne vous souciez plus de la mise en page !
                 </h1>
@@ -88,19 +81,18 @@
                        id="download-button"
                        onclick="handleDownloadClicks(event)"
                        href="http://download.redige.net/files/Redige-win32-x64-installer/RedigeSetup.exe">
-                        <span>Télécharger</span><span class="is-hidden-mobile"> & Essayer gratuitement</span>
+                        <span>Télécharger&nbsp;</span><span class="is-hidden-mobile">& Essayer gratuitement</span>
                     </a>
                 </p>
             </div>
-            <div class="column has-text-centered">
-                <img class="rdg-video-presentation"
-                     src="app/assets/img/screenshot.jpg"/>
-            </div>
         </div>
-        <div class="has-text-centered">
-            <a data-scroll href="#features" class="scroll-down">
-                <span class="icon-chevron-down icon-36px"></span>
-            </a>
+        <div class="container is-hidden-mobile">
+            <div class="columns">
+                <div class="column has-text-centered">
+                    <img class="rdg-video-presentation"
+                         src="app/assets/img/screenshot2.jpg"/>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -114,18 +106,18 @@
         </div>
         <div class="content">
             <div class="columns is-multiline">
-                <div class="column is-one-third has-text-centered">
+                <div class="column is-one-third has-text-left">
                     <h3><span class="icon-magic icon-36px" aria-hidden="true"></span> Mise en page automatique</h3>
                     <p>Marges, tailles des caractères, numérotation...
                         Oubliez ces détails techniques et concentrez vous sur le contenu et sa
                         structure : votre véritable valeur ajoutée.</p>
                 </div>
-                <div class="column is-one-third has-text-centered">
+                <div class="column is-one-third has-text-left">
                     <h3><span class="icon-hand-peace-o icon-36px" aria-hidden="true"></span> Un vrai manuscrit </h3>
                     <p>Un document n'est jamais fait d'une traite, Rédige résistera à toutes vos retouches sans
                         compromettre le résultat final.</p>
                 </div>
-                <div class="column is-one-third has-text-centered">
+                <div class="column is-one-third has-text-left">
                     <h3><span class="icon-user-secret icon-36px" aria-hidden="true"></span> Vos fichiers, en privé</h3>
                     <p>
                         Rédige ne détient pas vos données, tout est sur votre ordinateur. Organisez, partagez comme bon
@@ -149,7 +141,7 @@
                 <div class="pricing__item">
                     <h3 class="pricing__title">Auteur</h3>
                     <div class="pricing__price"><span class="pricing__amount">Gratuit</span></div>
-                    <p class="pricing__sentence">pour tous</p>
+                    <p class="pricing__sentence">simplement l'essentiel</p>
                     <ul class="pricing__feature-list">
                         <li class="pricing__feature">Hors Connexion</li>
                         <li class="pricing__feature">Edition</li>

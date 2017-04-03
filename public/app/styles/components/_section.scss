@@ -59,3 +59,14 @@
 #download {
   padding-bottom: 70px;
 }
+
+#main {
+  background-color: rgba(21, 33, 51, 0.8);
+  color: white;
+  .title, .subtitle {
+    color: white;
+  }
+  .container {
+    margin-top: 10%;
+  }
+}

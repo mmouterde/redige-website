@@ -3836,6 +3836,12 @@ a.panel-block:hover {
   .scroll-down:hover {
     color: #cccccc; }
 
+body {
+  background-image: url("../assets/img/dustin-lee-19666.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
 .rdg-nav {
   position: absolute;
   width: 100%;
@@ -3962,8 +3968,17 @@ ul.pricing__feature-list {
 #download {
   padding-bottom: 70px; }
 
+#main {
+  background-color: rgba(21, 33, 51, 0.8);
+  color: white; }
+  #main .title, #main .subtitle {
+    color: white; }
+  #main .container {
+    margin-top: 10%; }
+
 .rdg-video-presentation {
-  width: 100%; }
+  width: 60%;
+  margin-bottom: -45px; }
 
 .rdg-little-margin {
   margin: 5px; }
