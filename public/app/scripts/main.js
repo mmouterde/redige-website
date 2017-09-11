@@ -33,3 +33,11 @@ function handleDownloadClicks(event) {
         eventLabel: event.target.href
     });
 }
+
+function handleContactClicks(event) {
+    ga('send', 'event', {
+        eventCategory: 'contact',
+        eventAction: 'click',
+        eventLabel: event.target.innerText
+    });
+}

@@ -86,6 +86,15 @@ ul.pricing__feature-list {
   border-bottom: 3px solid rgba(139, 144, 157, 0.18);
 }
 
+.pricing__per {
+  font-size: 33%;
+}
+
+.plus {
+  font-size: 200%;
+  color: $rdg-light-blue;
+}
+
 #rdg-pricing-enterprise {
   display: none;
 }

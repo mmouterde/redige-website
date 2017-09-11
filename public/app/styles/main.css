@@ -3924,6 +3924,13 @@ ul.pricing__feature-list {
   color: #9CA0A9;
   border-bottom: 3px solid rgba(139, 144, 157, 0.18); }
 
+.pricing__per {
+  font-size: 33%; }
+
+.plus {
+  font-size: 200%;
+  color: #2168ff; }
+
 #rdg-pricing-enterprise {
   display: none; }
 
@@ -3977,7 +3984,6 @@ ul.pricing__feature-list {
     margin-top: 10%; }
 
 .rdg-video-presentation {
-  width: 60%;
   margin-bottom: -45px; }
 
 .rdg-little-margin {
