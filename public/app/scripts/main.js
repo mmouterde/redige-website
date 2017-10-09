@@ -1,6 +1,6 @@
 NodeList.prototype.forEach = Array.prototype.forEach;
 
-var version = "0.2.7";
+var version = "0.2.8";
 var winURL = "http://download.redige.net/files/Redige Setup " + version + ".exe";
 var linURL = "http://download.redige.net/files/redigeApp-" + version + "-x86_64.AppImage";
 var macURL = "http://download.redige.net/files/Redige-" + version + ".dmg";
