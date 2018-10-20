@@ -175,7 +175,7 @@ module.exports = function (grunt) {
 
     grunt.registerTask('dev', [
         'copy:index',
-        'sass:dev',
+      /*  'sass:dev',*/
         'wiredep:dev',
         'fileblocks:all',
         'replace:all',
